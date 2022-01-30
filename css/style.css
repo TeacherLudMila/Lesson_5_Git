@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+h2{
+    margin: 80px 0 40px;
+}
+ul{
+    padding-left: 0;
+}
+li{
+    padding: 12px 21px;
+    list-style: none;
+    height: auto;
+    position: relative;
+    margin: 12px 0;
+}
+li:before{
+    content: '';
+    width: 2px;
+    height: 100%;
+    display: block;
+    background-color: #0042EB;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.console span{
+    color: #0042eb;
+    font-weight: 700;
+}
+.github span,
+.change span,
+.branch span,
+.config span{
+    color: #3AB19B;
+    font-weight: 700;
+}
+.github span:first-of-type,
+.change span:first-of-type,
+.branch span:first-of-type,
+.config span:first-of-type{
+    color: #960796;
+    font-weight: 700;
+}
+.github li:before,
+.change li:before,
+.branch li:before,
+.config li:before{
+    background-color: #960796;
+}
+.links{
+    margin: 80px 0 120px;
+    font-weight: 700;
+    color: #0042EB;
+}

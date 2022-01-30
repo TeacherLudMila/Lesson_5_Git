@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git & GitHub</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <section class="console">
+        <div class="container">
+            <div class="console__wrap">
+                <h2>Работа в консоли</h2>
+                <ul class="console__list">
+                    <li class="console__item"><span>ls</span> - вывести список содержимого папки, в которой находимся</li>
+                    <li class="console__item"><span>pwd</span> - вывести путь, по которому мы сейчас находимся</li>
+                    <li class="console__item"><span>mkdir new_folder</span> - создать папку “new_folder”</li>
+                    <li class="console__item"><span>rmdir new_folder</span> - удалить папку “new_folder”</li>
+                    <li class="console__item"><span>rm –rf new_folder</span> - удалить папку со всем ее содержимым</li>
+                    <li class="console__item"><span>cd ../..</span> - выйти из папки на 2 уровня вверх</li>
+                    <li class="console__item"><span>cd lessons/new_folder</span> - зайти в папку “new_folder”</li>
+                    <li class="console__item"><span>touch index.html style.css</span> - создать index.html и style.css</li>
+                    <li class="console__item"><span>code index.html style.css</span> - создать и сразу открыть в редакторе кода index.html и style.css</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <section class="github">
+        <div class="container">
+            <div class="github__wrap">
+                <h2>Работа с Git и GitHUB. Основные команды.</h2>
+                <ul class="github__list">                    
+                    <li class="github__item"><span>git </span><span>init </span>- инициализировать репозиторий</li>
+                    <li class="github__item"><span>git </span><span>status </span>- показать текущий статус</li>
+                    <li class="github__item"><span>git </span><span>add . </span>- добавить все изменения</li>
+                    <li class="github__item"><span>git </span><span>add index.html </span>- добавляет только index.html</li>
+                    <li class="github__item"><span>git </span><span>commit -m "first commit" </span>- закоммитить все изменения (название коммита - "first commit")</li>
+                    <li class="github__item"><span>git </span><span>branch -M main </span>- создаем ветку с названием main (основная ветка)</li>
+                    <li class="github__item"><span>git </span><span>git remote add origin https://github.com/... </span>- связываем друг с другом локальный и удаленный репозиторий</li>
+                    <li class="github__item"><span>git </span><span>push -u origin main </span>- заливаем все на удаленный репозиторий на ветку main</li>
+                    <li class="github__item"><span>git </span><span>pull </span>- забирает изменения с удаленного репозитория в локальный</li>
+                    <li class="github__item"><span>git </span><span>clone </span>- клонирует проект с удаленного репозитория</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="change">
+        <div class="container">
+            <div class="change__wrap">
+                <h2>Заливаем изменения</h2>
+                <ul class="change__list">
+                    <li class="change__item"><span>git </span><span>status </span>- проверяем статус (изменения)</li>
+                    <li class="change__item"><span>git </span><span>add . </span>- добавляем все изменения</li>
+                    <li class="change__item"><span>git </span><span>status </span>- проверяем статус (что произошло)</li>
+                    <li class="change__item"><span>git </span><span>commit -m "add... change..." </span>- коммитимся</li>
+                    <li class="change__item"><span>git </span><span>push -u origin main </span>- заливаем на ветку все
+                        изменения</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="branch">
+        <div class="container">
+            <div class="branch__wrap">
+                <h2>Работа с ветками</h2>
+                <ul class="branch__list">
+                    <li class="branch__item"><span>git </span><span>branch </span>- показывает список веток</li>
+                    <li class="branch__item"><span>git </span><span>branch branch-name </span>- создает новую ветку с названием "branch-name"</li>
+                    <li class="branch__item"><span>git </span><span>branch -D branch-name </span>- удаляет ветку с названием "branch-name"</li>
+                    <li class="branch__item"><span>git </span><span>checkout </span>- переключиться на другую ветку</li>
+                    <li class="branch__item"><span>git </span><span>checkout branch-name </span>- переключается на последний коммит в ветке "branch-name"</li>
+                    <li class="branch__item"><span>git </span><span>checkout -b branch-name </span>- создает и переключается на ветку "branch-name"</li>   
+                    <li class="branch__item"><span>git </span><span>merge branch-name </span>- совмещает текущую ветку с "branch-name"</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="config">
+        <div class="container">
+            <div class="config__wrap">
+                <h2>Конфигурация и параметры git</h2>
+                <ul class="config__list">
+                    <li class="config__item"><span>git config</span><span> --global user.name </span>- показывает имя пользователя</li>
+                    <li class="config__item"><span>git config</span><span> --global user.name 'new user' </span>- устанавливает глобальное имя пользователя</li>
+                    <li class="config__item"><span>git config</span><span> --local user.name 'new user' </span>- устанавливает локальное имя пользователя</li>
+
+                    <li class="config__item"><span>git config</span><span> --global user.email</span>- показывает email пользователя</li>
+                    <li class="config__item"><span>git config</span><span> --global user.name 'new user' </span>- устанавливает глобальный email пользователя</li>
+                    <li class="config__item"><span>git config</span><span> --local user.name 'new user' </span>- устанавливает локальный email пользователя</li>
+                  
+                    <li class="config__item"><span>git config</span><span> --list </span>- выводит список настроек</li>
+                    <li class="config__item"><span>git config</span><span> --global --unset-all user.name </span>- удалить глобальные настройки имени</li>
+                    <li class="config__item"><span>git config</span><span> --global --unset-all user.email </span>- удалить глобальные настройки почты</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <section class="links">
+        <div class="container">
+            <div class="links__wrap">
+                <a href="./files/Git_&_Github_for_beginner.pdf" target="_blank">Шпора “Git и Github для начинающих”</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
