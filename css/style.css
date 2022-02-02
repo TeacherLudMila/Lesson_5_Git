@@ -63,3 +63,7 @@ li:before{
     font-weight: 700;
     color: #0042EB;
 }
+.links a{
+    display: block;
+    margin: 20px 0;
+}
